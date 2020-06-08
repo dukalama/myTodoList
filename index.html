@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" type="image/png" href="./favicon.png" >
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Croissant+One&display=swap" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@800&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous" />
+	<link rel="stylesheet" href="./style.css">
+	<title>To-do List Online</title>
+</head>
+<body >
+	<div class="background">
+		<nav>
+			<div class="logo">
+				<h4><a href="https://todolistbydukie.netlify.app/" class="logo_img"><i class="fas fa-feather"></i></a> TO-DO</h4>
+			</div>
+			<ul class = "navbutton_container">
+				<li>
+					<a href="#" class="nav_button" id="howto">How to use?</a>
+				</li>
+				<li>
+					<a href="#" class="nav_button" id="contact">Contact me</a>
+				</li>
+				<!-- <li>
+					<a href="#" class="nav_button" id="feedback">Feedback</a>
+				</li> -->
+			</ul>
+			<div class="burger">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+		</nav>
+
+		<header>
+			<h1>
+				<div class="todo-title" id="letter_bounce">T</div>
+				<div class="todo-title" id="letter_bounce">o</div>
+				<div class="todo-title1">
+					<div class="todo-title" id="letter_bounce">d</div>
+					<div class="todo-title" id="letter_bounce">o</div>
+				</div>
+				<div class="todo-title" id="letter_bounce">l</div>
+				<div class="todo-title" id="letter_bounce">i</div>
+				<div class="todo-title" id="letter_bounce">s</div>
+				<div class="todo-title" id="letter_bounce">t</div>
+
+			</h1>
+		</header>
+		<form id="todo-form">
+			<input type="text" class="todo-input" placeholder="What do you want do?">
+			<button class="todo-button" type="submit">
+				<i class="fas fa-plus-square"></i>
+			</button>
+			<div class="select">
+				<select name="todos" class="filter-todo">
+					<option value="all">All</option>
+					<option value="completed">Done</option>
+					<option value="uncompleted">Pending</option>
+				</select>
+			</div>
+			<!-- <button class="removeCompleted" type="button">Remove</br>done?</button> -->
+			
+		</form>
+		<!-- <div class="feedback_container" id="contact_section">
+			<form  class="contact_form" action="index.html" onsubmit="return false" method="post" enctype="text/plain">
+				<div id="contact_head">Feedback</div>
+				<div id="spacer1">
+					<i class="fas fa-user-alt" id="labeler1"></i>
+					<input type="text" class="contact_form_text" id="name" placeholder="Name">
+				</div>
+				<div id="spacer2">
+					<i class="fas fa-envelope" id="labeler2"></i>
+					<input type="email" class="contact_form_text" id="email" placeholder="Email" required required oninvalid="this.setCustomValidity('Enter a valid email!')">
+				</div>
+				<div id="spacer3">
+					<i class="fas fa-comment" id="labeler3"></i>
+					<textarea class="contact_form_text" id="message" placeholder="Message" required oninvalid="this.setCustomValidity('Please tell me something.')"></textarea>
+				</div>
+				<div>	
+					<button type="reset" class="contact_form_btn"><i class="fas fa-undo-alt"></i> Reset</button>
+					<button onclick="sendContact();" type="submit" class="contact_form_btn"><i class="fas fa-paper-plane"></i> Send</button>
+				</div>
+			</form>
+		</div> -->
+		<div class="todo-container">
+			<ul class="todo-list"></ul>
+		</div>
+		<div id="howtouse">
+			<ul>
+				<li><i class="fas fa-caret-right"></i> Enter what you want to do and add it using <i class="fas fa-plus-square"></i> button.</li>
+				<li><i class="fas fa-caret-right"></i> Click <i class="fas fa-check"></i> button if task is done.</li>
+				<li><i class="fas fa-caret-right"></i> Click <i class="fas fa-trash"></i> button to delete the task.</li>
+				<li><i class="fas fa-caret-right"></i> Click <i class="fas fa-caret-down"></i> to show All/Done/Pending tasks.</li>
+				<li><i class="fas fa-caret-right"></i> Tasks are automatically saved, so make sure to delete finished tasks.</li>
+			</ul>
+		</div>
+		<div id="contactme">
+			<ul>
+				<li>
+					<a href="https://www.facebook.com/dukalama" target="_blank"><i class="fab fa-facebook"> </i></a>
+				</li>
+				<li>
+					<a href="https://mail.yahoo.com" target="_blank" class="copy"><i class="fas fa-envelope"></i></a>
+				</li>
+				<li>
+					<a href="https://github.com/dukalama?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<a href="#" class="foruntoggle"><div id="foruntoggle""></div></a>
+
+	<script src="app.js"></script>
+</body>
+</html>
